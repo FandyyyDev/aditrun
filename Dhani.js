@@ -225,7 +225,7 @@ ${prefix}list`
 fakeitem(menu)
 break
 case 'feerekber':
-fs.readFileSync ('./media/feerekber.jpg')
+let feerekber = fs.readFileSync ('./media/feerekber.jpg')
 Dhani.sendMessage(from, feerekber, image, {caption: 'Ini kak berikut informasi nom dan fee jasa lunasinrekber :)', quoted: mek, contextInfo: { mentionedJid: [sender]}})
 break
 case 'mulairekber':
